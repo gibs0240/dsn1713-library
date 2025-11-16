@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+@import "../node_modules/animate.css/animate.css";
+
+/* Set custom variables here */
+
+:root {
+  --primary-color: #2e483a ;
+}
+
+.btn-primary{
+  background-color: var(--primary-color) !important;
+  color: #f6f3ed ;
+  border-color: var(--primary-color) !important;
+}
+
+.text-light {
+  color: #f6f3ed ;
+}
+
+.accordion-button {
+  background-color: #f6f3ed !important;
+}
+
+.bg-primary {
+  background-color: #2e483a  !important;
+}
+
+.bg-info {
+  background-color: #f6f3ed !important;
+}
+
+.text-secondary-emphasis {
+  color: #a1aca6 !important;
+}
+
+.navbar-brand {
+  color: #F6F3ED;
+}
+
+body {
+  font-family: "Sarala", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+#hero {
+  height: 800px;
+  background-color: #E4E6DB;
+  background-image: url(../images/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .d-flex {
+  height: 800px;
+}
+
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#cta .d-flex {
+  height: 400px;
+}
+
+section:not(#hero):not(#cta){
+  padding: 60px 0;
+}
+
+@media(min-width: 993px){
+  section:not(#hero):not(#cta){
+    padding: 100px 0;
+  }
+}
